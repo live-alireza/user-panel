@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <title>Panel</title>
+    <title>افزودن سرویس</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive_991.css" media="(max-width:991px)">
     <link rel="stylesheet" href="css/responsive_768.css" media="(max-width:768px)">
@@ -23,14 +23,14 @@
     </div>
 
     <ul>
-        <li class="item-li i-dashboard "><a href="index.html">داشبورد</a></li>
-        <li class="item-li i-courses "><a href="courses.html">دوره ها</a></li>
+        <li class="item-li i-dashboard "><a href="index.html">پیشخوان</a></li>
+        <li class="item-li i-courses is-active"><a href="courses.html">دوره ها</a></li>
         <li class="item-li i-users"><a href="users.html"> کاربران</a></li>
         <li class="item-li i-categories"><a href="categories.html">دسته بندی ها</a></li>
         <li class="item-li i-slideshow"><a href="slideshow.html">اسلایدشو</a></li>
         <li class="item-li i-banners"><a href="banners.html">بنر ها</a></li>
         <li class="item-li i-articles"><a href="articles.html">مقالات</a></li>
-        <li class="item-li i-ads is-active"><a href="ads.html">تبلیغات</a></li>
+        <li class="item-li i-ads"><a href="ads.html">تبلیغات</a></li>
         <li class="item-li i-comments"><a href="comments.html"> نظرات</a></li>
         <li class="item-li i-tickets"><a href="tickets.html"> تیکت ها</a></li>
         <li class="item-li i-discounts"><a href="discounts.html">تخفیف ها</a></li>
@@ -66,75 +66,46 @@
     </div>
     <div class="breadcrumb">
         <ul>
-            <li><a href="index.html">پیشخوان</a></li>
-            <li><a href="ads.html" class="is-active"> تبلیغات</a></li>
+            <li><a href="index.html">پروفایل کاربری</a></li>
+            <li><a href="add-service.html" class="is-active">ویرایش سرویس</a></li>
         </ul>
     </div>
-    <div class="main-content">
-        <div class="tab__box">
-            <div class="tab__items">
-                <a class="tab__item is-active" href="ads.html">لیست تبلیغات</a>
-                <a class="tab__item " href="create-ads.html" >ایجاد تبلیغ جدید</a>
+    <div class="main-content padding-0">
+        <p class="box__title">ویرایش سرویس </p>
+        <div class="row no-gutters bg-white">
+            <div class="col-12">
+                <form action="" class="padding-30">
+                    <input type="text" class="text" placeholder="عنوان سرویس">
+                    <input type="text" class="text text-left " placeholder="آدرس سرویس مورد نظر">
+
+                    <ul class="tags">
+
+                        <li class="addedTag">رشت<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="addedTag">گیلان<span class="tagRemove" onclick="$(this).parent().remove();">x</span>
+                            <input type="hidden" value="dsfsdf" name="tags[]"></li>
+                        <li class="tagAdd taglist">
+                            <input type="text" id="search-field">
+                        </li>
+                    </ul>
+
+                    <div class="file-upload">
+                        <div class="i-file-upload">
+                            <span>آپلود عکس سرویس</span>
+                            <input type="file" class="file-upload" id="files" name="files"/>
+                        </div>
+                        <span class="filesize"></span>
+                        <span class="selectedFiles">فایلی انتخاب نشده است</span>
+                    </div>
+                    <textarea placeholder="توضیحات سرویس" class="text "></textarea>
+                    <button class="btn btn-webamooz_net">ویرایش سرویس</button>
+                </form>
             </div>
-        </div>
-        <div class="table__box">
-            <table class="table">
-
-                <thead role="rowgroup">
-                <tr role="row" class="title-row">
-                    <th>شناسه</th>
-                    <th>عنوان</th>
-                    <th>صفحه</th>
-                    <th>نوع تبلیغ</th>
-                    <th>لینک</th>
-                    <th>تاریخ ایجاد</th>
-                    <th>تاریخ انقضا</th>
-                    <th>محدودیت باز شدن</th>
-                    <th>عملیات</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr role="row" class="">
-                    <td><a href="">1</a></td>
-                    <td><a href="">سایت اموزشی</a></td>
-                    <td><a href="">صفحه اصلی</a></td>
-                    <td>نیوتب</td>
-                    <td><a href="https://google.com" rel="nofollow noopener">google.com</a></td>
-                    <td>1399/11/11</td>
-                    <td>1399/11/12</td>
-                    <td>همیشه فعال</td>
-                    <td>
-                        <a href="" class="item-delete mlg-15" title="حذف"></a>
-                        <a href="" class="item-reject mlg-15" title="رد"></a>
-                        <a href="" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
-                        <a href="" class="item-confirm mlg-15" title="تایید"></a>
-                        <a href="" class="item-edit" title="ویرایش"></a>
-                    </td>
-                </tr>
-                <tr role="row" class="">
-                    <td><a href="">1</a></td>
-                    <td><a href="">سایت اموزشی</a></td>
-                    <td><a href="">صفحه اصلی</a></td>
-                    <td>نیوتب</td>
-                    <td><a href="https://google.com" rel="nofollow noopener">google.com</a></td>
-                    <td>1399/11/11</td>
-                    <td>1399/11/12</td>
-                    <td>همیشه فعال</td>
-                    <td>
-                        <a href="" class="item-delete mlg-15" title="حذف"></a>
-                        <a href="" class="item-reject mlg-15" title="رد"></a>
-                        <a href="" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
-                        <a href="" class="item-confirm mlg-15" title="تایید"></a>
-                        <a href="" class="item-edit" title="ویرایش"></a>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
         </div>
     </div>
 </div>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/js.js"></script>
+<script src="js/tagsInput.js"></script>
 </html>
