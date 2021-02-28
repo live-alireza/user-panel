@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <title>افزودن سرویس</title>
+    <title>دسته بندی‌ها</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive_991.css" media="(max-width:991px)">
     <link rel="stylesheet" href="css/responsive_768.css" media="(max-width:768px)">
@@ -24,9 +24,9 @@
 
     <ul>
         <li class="item-li i-dashboard "><a href="index.html">پیشخوان</a></li>
-        <li class="item-li i-courses is-active"><a href="courses.html">دوره ها</a></li>
+        <li class="item-li i-courses"><a href="courses.html">دوره ها</a></li>
         <li class="item-li i-users"><a href="users.html"> کاربران</a></li>
-        <li class="item-li i-categories"><a href="categories.html">دسته بندی ها</a></li>
+        <li class="item-li i-categories is-active"><a href="categories.html">دسته بندی ها</a></li>
         <li class="item-li i-slideshow"><a href="slideshow.html">اسلایدشو</a></li>
         <li class="item-li i-banners"><a href="banners.html">بنر ها</a></li>
         <li class="item-li i-articles"><a href="articles.html">مقالات</a></li>
@@ -67,49 +67,56 @@
     <div class="breadcrumb">
         <ul>
             <li><a href="index.html">پروفایل کاربری</a></li>
-            <li><a href="add-service.html" class="is-active">افزودن سرویس</a></li>
+            <li><a href="categories.html.html" class="is-active">دسته بندی ها</a></li>
         </ul>
     </div>
-    <div class="main-content padding-0">
-        <p class="box__title">ایجاد سرویس جدید</p>
-        <div class="row no-gutters bg-white">
-            <div class="col-12">
-                <form action="" class="padding-30">
-                    <input type="text" class="text" placeholder="عنوان سرویس">
-                    <textarea placeholder="مختصری از سرویس" class="text "></textarea>
-                    <p class="rules margin-bottom-15">این بخش مختصری از توضیحات سرویس می باشد و حداکثر 200 کاراکتر قابل قبول است</p>
-                    <textarea placeholder="توضیحات سرویس" class="text "></textarea>
-                    <input type="text" class="text" placeholder="آدرس">
+    <div class="main-content padding-0 categories">
+        <div class="row no-gutters  ">
+            <div class="col-8 margin-left-10 margin-bottom-15 border-radius-3">
+                <p class="box__title">دسته بندی ها</p>
+                <div class="table__box">
+                    <table class="table">
+                        <thead role="rowgroup">
+                        <tr role="row" class="title-row">
+                            <th>شناسه</th>
+                            <th>نام دسته بندی</th>
+                            <th>نام انگلیسی دسته بندی</th>
+                            <th>عملیات</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr role="row" class="">
+                            <td><a href="">1</a></td>
+                            <td><a href="">برنامه نویسی</a></td>
+                            <td>programming</td>
+                            <td>
+                                <a href="" class="item-delete mlg-15" title="حذف"></a>
+                                <a href="" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
+                                <a href="edit-category.html" class="item-edit " title="ویرایش"></a>
+                            </td>
+                        </tr>
+                        <tr role="row" class="">
+                            <td><a href="">1</a></td>
+                            <td><a href="">وب</a></td>
+                            <td>programming</td>
+                            <td>
+                                <a href="" class="item-delete mlg-15" title="حذف"></a>
+                                <a href="" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
+                                <a href="edit-category.html" class="item-edit " title="ویرایش"></a>
+                            </td>
+                        </tr>
 
-                    <div class="file-upload">
-                        <div class="i-file-upload">
-                            <span>آپلود عکس سرویس</span>
-                            <input type="file" class="file-upload" id="files" name="files"/>
-                        </div>
-                        <span class="filesize"></span>
-                        <span class="selectedFiles">فایلی انتخاب نشده است</span>
-                    </div>
-
-                    <select name="" id="">
-                        <option value="0">دسته بندی</option>
-                        <option value="1">کافه</option>
-                        <option value="2">رستوران</option>
-                        <option value="3">لاهیجان</option>
-                        <option value="4">انزلی</option>
-                    </select>
-
-
-
-                    <select name="" id="">
-                        <option value="0">سال افتتاح سرویس</option>
-                        <option value="1">1399</option>
-                        <option value="2">1398</option>
-                        <option value="3">1395</option>
-                        <option value="4">1394</option>
-                    </select>
-                    
-                    <button class="btn btn-webamooz_net">افزودن سرویس</button>
-                </form>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-4 bg-white">
+                  <p class="box__title">ایجاد دسته بندی جدید</p>
+                  <form action="" method="post" class="padding-30">
+                      <input type="text" placeholder="نام دسته بندی" class="text">
+                      <input type="text" placeholder="نام انگلیسی دسته بندی" class="text">
+                      <button class="btn btn-webamooz_net">اضافه کردن</button>
+                  </form>
             </div>
         </div>
     </div>
